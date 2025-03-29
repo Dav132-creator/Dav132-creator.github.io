@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia de GTA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .portada {
+            background: url('fondo.jpg') no-repeat center center/cover;
+            padding: 50px;
+            color: white;
+        }
+
+        .integrantes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .integrante {
+            background: #282828;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+        }
+
+        .integrante img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .games {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        article {
+            background: #282828;
+            padding: 15px;
+            border-radius: 8px;
+            width: 250px;
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        form {
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            margin: auto;
+        }
+
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1f1f1f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wikipedia de GTA</h1>
+        <nav>
+            <ul>
+                <li><a href="#integrantes">Integrantes</a></li>
+                <li><a href="#juegos">Juegos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="portada">
+        <h2>Bienvenido a la Wikipedia de GTA</h2>
+        <p>Explora información sobre la saga Grand Theft Auto.</p>
+    </section>
+
+    <section id="integrantes">
+        <h2>Integrantes del Proyecto</h2>
+        <div class="integrantes">
+            <div class="integrante">
+                <img src="https://static.wikia.nocookie.net/gtawiki/images/a/a9/LamarDavis-GTAV.png/revision/latest/scale-to-width-down/250?cb=20150315005551" alt="Integrante 1">
+                <h3>Rivera Avila Dominic Alberto</h3>
+                <p></p>
+            </div>
+            <div class="integrante">
+                <img src="https://i.pinimg.com/originals/86/b0/b4/86b0b43a99db01ba08a68c1b0757dc92.jpg" alt="Integrante 2">
+                <h3>David Isaí Morales Cruz</h3>
+                <p></p>
+            </div>
+            <div class="integrante">
+                <img src="https://static.wikia.nocookie.net/esgta/images/5/5a/Big_Smoke_SA.png/revision/latest?cb=20221015155149" alt="Integrante 3">
+                <h3>Castillo Perez Mauricio Eduardo</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="juegos">
+        <h2>Lista de Juegos de GTA</h2>
+        <div class="games">
+            <article>
+                <img src="https://static.wikia.nocookie.net/esgta/images/a/a2/GTAIII_car%C3%A1tula.png/revision/latest?cb=20160125000236" alt="GTA 3">
+                <h3>Grand Theft Auto III</h3>
+                <p>Lanzamiento: 2001</p>
+                <p>GTA III marcó la transición a un mundo 3D abierto.</p>
+            </article>
+            <article>
+                <img src="https://static.wikia.nocookie.net/esgta/images/1/1b/Car%C3%A1tula_GTA_V.jpg/revision/latest?cb=20130402191528" alt="GTA V">
+                <h3>Grand Theft Auto V</h3>
+                <p>Lanzamiento: 2013</p>
+                <p>El título más exitoso de la saga con múltiples protagonistas.</p>
+            </article>
+            <article>
+                <img src="https://preview.redd.it/uuhy791ml0pc1.png?auto=webp&s=80eb635d867c5ded0051972c7b9f51a3366d02bb" alt="GTA VI">
+                <h3>Grand Theft Auto VI</h3>
+                <p>Lanzamiento: Próximamente</p>
+                <p>La próxima entrega de la franquicia con nuevas ciudades y personajes.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Wikipedia de GTA - No oficial</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            alert("Bienvenido a la Wikipedia de GTA!");
+        });
+    </script>
+</body>
+</html>
