@@ -9,13 +9,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background: url('https://c4.wallpaperflare.com/wallpaper/396/364/992/grand-theft-auto-grand-theft-auto-v-wallpaper-preview.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: white;
             text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         header {
-            background-color: #1f1f1f;
+            background-color: rgba(31, 31, 31, 0.9);
             padding: 20px;
         }
 
@@ -34,69 +39,26 @@
             text-decoration: none;
         }
 
-        .portada {
-            background: url('fondo.jpg') no-repeat center center/cover;
-            padding: 50px;
-            color: white;
-        }
-
-        .integrantes {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .integrante {
-            background: #282828;
-            padding: 15px;
-            border-radius: 8px;
-            width: 200px;
-        }
-
-        .integrante img {
-            width: 100%;
-            border-radius: 50%;
-        }
-
-        .games {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        article {
-            background: #282828;
-            padding: 15px;
-            border-radius: 8px;
-            width: 250px;
-        }
-
-        article img {
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        form {
-            background: #1f1f1f;
-            padding: 20px;
-            border-radius: 8px;
+        .cuadro-texto {
             width: 50%;
             margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
         }
 
-        form input, form textarea, form button {
-            display: block;
-            width: 100%;
-            margin-top: 10px;
-            padding: 10px;
+        .portada {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            color: white;
+            margin-top: auto; /* Empuja hacia abajo */
         }
 
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #1f1f1f;
+            background-color: rgba(31, 31, 31, 0.9);
         }
     </style>
 </head>
@@ -108,44 +70,20 @@
                 <li><a href="#integrantes">Integrantes</a></li>
                 <li><a href="#juegos">Juegos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#referencias"></a>></li>
             </ul>
         </nav>
     </header>
 
-    <section class="portada">
-        <h2>Bienvenido a la Wikipedia de GTA</h2>
-        <p>Explora información sobre la saga Grand Theft Auto.</p>
-    </section>
 
-    <section id="integrantes">
-        <h2>Integrantes del Proyecto</h2>
-        <div class="integrantes">
-            <div class="integrante">
-                <img src="https://pm1.aminoapps.com/6676/ec430e953d98b0f55bf6b4d783057ab2c9187b27_00.jpg" alt="Integrante 1">
-                <h3>Rivera Avila Dominic Alberto</h3>
-                <p></p>
-            </div>
-            <div class="integrante">
-                <img src="https://i.pinimg.com/originals/86/b0/b4/86b0b43a99db01ba08a68c1b0757dc92.jpg" alt="Integrante 2">
-                <h3>David Isaí Morales Cruz</h3>
-                <p></p>
-            </div>
-            <div class="integrante">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjVvU5j-twPsnVPX_zgPyANUYaAekwGgr3YA&s" alt="Integrante 3">
-                <h3>Castillo Perez Mauricio Eduardo</h3>
-                <p></p>
-            </div>
-        </div>
-    </section>
+    <div class="cuadro-texto">
+        <h2>PROYECTO DE PROGRAMACION WEB</h2>
+        <p>Página de GTA (serie de juegos)</p>
+        <p>Información acerca de los juegos de GTA</p>
+        <p>personajes, juegos, extras, mapas, noticias.</p>
+    </div>
+
     <footer>
         <p>&copy; 2025 Wikipedia de GTA - No oficial</p>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            alert("Bienvenido a la Wikipedia de GTA!");
-        });
-    </script>
 </body>
 </html>
