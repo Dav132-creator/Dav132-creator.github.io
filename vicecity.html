@@ -196,6 +196,80 @@
   }
 }
 
+#consolas {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#consolas h2 {
+  font-size: 28px;
+  color: #cce7ff;
+}
+
+#consolas p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.platform-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+}
+
+.platform img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.platform a {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white; /* Mantiene el color del enlace sin cambios */
+}
+
+.platform a:hover {
+  text-decoration: underline; /* Efecto al pasar el cursor */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  #consolas {
+    padding: 15px;
+  }
+
+  #consolas h2 {
+    font-size: 24px;
+  }
+
+  #consolas p {
+    font-size: 18px;
+  }
+
+  .platform a {
+    font-size: 18px;
+  }
+}
 
 
   </style>
@@ -258,7 +332,24 @@
   <p>
     Grand Theft Auto: Vice City se desarrolla en la vibrante Vice City, una metrópolis ficticia inspirada en el Miami de los años 80. La historia sigue a <strong>Tommy Vercetti</strong>, un exconvicto que, tras cumplir una condena, es enviado a Vice City por la mafia para supervisar un negocio de drogas. Sin embargo, un fallido intercambio y traiciones lo impulsan a tomar el control del submundo criminal, construyendo su propio imperio y enfrentándose a poderosos rivales y a la corrupción reinante.
   </p>
-
+<section id="consolas">
+  <h2>Consolas en las que salió GTA: Vice city</h2>
+  <p>Grand Theft Auto: Vice city fue lanzado originalmente para las siguientes plataformas:</p>
+  <div class="platform-list">
+    <div class="platform">
+      <img src="https://thumb.pccomponentes.com/w-530-530/articles/1067/10675989/1612-paladone-lampara-logo-playstation-opiniones.jpg" alt="PlayStation 2">
+      <a href="https://store.playstation.com/es-es/concept/10003551" target="_blank">PlayStation 2</a>
+    </div>
+    <div class="platform">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Cmq241MXqEs0mu52qny9k-IpIhBlqUsHhw&s" alt="Windows">
+      <a href="https://store.steampowered.com/app/1546990/Grand_Theft_Auto_Vice_City__The_Definitive_Edition/" target="_blank">Windows (Steam)</a>
+    </div>
+    <div class="platform">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5PZzx7CONJ2x4NcTvvUVbUUZwqvxOD0EHbnbfqXW35PAPdNMHA_vNLs1o88aYvFLNXco&usqp=CAU" alt="Xbox">
+      <a href="https://www.xbox.com/es-MX/games/store/grand-theft-auto-vice-city-the-definitive-edition/9PC16M34CB91" target="_blank">Xbox</a>
+    </div>
+  </div>
+</section>
 <h2>GTA: Vice City - Trailer</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BcqMaYdYow0?si=4MPUepQ00rg7lbjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
