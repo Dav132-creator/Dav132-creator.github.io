@@ -139,6 +139,80 @@
     p {
       line-height: 1.6;
     }
+    #consolas {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#consolas h2 {
+  font-size: 28px;
+  color: #cce7ff;
+}
+
+#consolas p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.platform-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+}
+
+.platform img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.platform a {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white; /* Mantiene el color del enlace sin cambios */
+}
+
+.platform a:hover {
+  text-decoration: underline; /* Efecto al pasar el cursor */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  #consolas {
+    padding: 15px;
+  }
+
+  #consolas h2 {
+    font-size: 24px;
+  }
+
+  #consolas p {
+    font-size: 18px;
+  }
+
+  .platform a {
+    font-size: 18px;
+  }
+}
   </style>
 </head>
 <body>
@@ -207,22 +281,37 @@ A lo largo del juego, Toni se enfrenta a desafíos como:
 <p>4. Traiciones y engaños</p>
 
 La historia de GTA: Liberty City Stories explora temas como la lealtad, la ambición y la supervivencia en un mundo criminal.
-
 El juego tiene un tono oscuro y satírico, y ofrece una visión crítica de la sociedad estadounidense y la cultura mafiosa.
     </p>
+    <section id="consolas">
+  <h2>Consolas en las que salió GTA: San Andreas</h2>
+  <p>Grand Theft Auto: San Andreas fue lanzado originalmente para las siguientes plataformas:</p>
+  <div class="platform-list">
+    <div class="platform">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf5pR3oIw34yUpo1rBsqXYIBBjnM5aDWO6bA&s" alt="PSP">
+      <a href="https://articulo.mercadolibre.com.mx/MLM-2388716552-playstation-psp-grand-theft-auto-liberty-city-stories-mapa-_JM#polycard_client=search-nordic&position=43&search_layout=stack&type=item&tracking_id=740cd193-f6a6-4dc9-ac76-c212814c6207&wid=MLM2388716552&sid=search" target="_blank">PSP</a>
+    </div>
+    <div class="platform">
+      <img src="https://thumb.pccomponentes.com/w-530-530/articles/1067/10675989/1612-paladone-lampara-logo-playstation-opiniones.jpg" alt="PlayStation 2">
+      <a href="https://store.playstation.com/es-mx/product/UP1004-PPSA05804_00-GTATRILOGYBUNDLE">PlayStation 2</a>
+    </div>
+    <div class="platform">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Cmq241MXqEs0mu52qny9k-IpIhBlqUsHhw&s" alt="Windows">
+      <a href="https://store.steampowered.com/app/12210/Grand_Theft_Auto_IV_The_Complete_Edition/?curator_clanid=1541443">Windows (Steam)</a>
+    </div>
+    <div class="platform">
+      <img src="https://www.comparasoftware.com/image-assets/360/MzYwfHdwLWNvbnRlbnQvdXBsb2Fkcy8yMDE4LzA4L2xvZ29pT1MucG5n.webp" alt="iOS">
+      <a href="https://apps.apple.com/es/app/gta-liberty-city-stories/id1061802598">iOS</a>
+    </div>
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/511px-Android_robot.svg.png" alt="Android">
+      <a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtalcs&hl=es_MX">Android</a>
+    </div>
+  </div>
+</section>
     
     <h2>GTA Liberty City - Trailer</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u28YeQybr8s?si=Zc-5PxczvRgyT7wF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <section id="consolas-liberty">
-  <h2>Consolas en las que salió GTA: Liberty City Stories</h2>
-  <p>Grand Theft Auto: Liberty City Stories fue lanzado originalmente para las siguientes plataformas:</p>
-  <ul>
-    <li><a href="https://www.playstation.com/es-mx/" target="_blank">PlayStation</a></li>
-    <li><a href="https://apps.apple.com/es/app/gta-liberty-city-stories/id1061802598" target="_blank">iOS</a></li>
-    <li><a href="https://play.google.com/store/apps/details?id=com.rockstargames.gtalcs" target="_blank">Android</a></li>
-  </ul>
-</section>
 
     <h2>Mapa de GTA Liberty City</h2>
     <img src="https://media.rockstargames.com/rockstargames/img/global/news/upload/actual_1361378924.jpg" alt="Mapa de GTA Liberty City" width="500" height="500"/>
