@@ -161,6 +161,80 @@
     height: auto;
   }
 }
+#consolas {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#consolas h2 {
+  font-size: 28px;
+  color: #cce7ff;
+}
+
+#consolas p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.platform-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+}
+
+.platform img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.platform a {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white; /* Mantiene el color del enlace sin cambios */
+}
+
+.platform a:hover {
+  text-decoration: underline; /* Efecto al pasar el cursor */
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  #consolas {
+    padding: 15px;
+  }
+
+  #consolas h2 {
+    font-size: 24px;
+  }
+
+  #consolas p {
+    font-size: 18px;
+  }
+
+  .platform a {
+    font-size: 18px;
+  }
+}
 
   </style>
 </head>
@@ -221,14 +295,23 @@
   <p>
     Grand Theft Auto: San Andreas se desarrolla en el estado ficticio de San Andreas, inspirado en California y Nevada durante los años 90. La historia sigue a <strong>Carl "CJ" Johnson</strong>, quien regresa a Los Santos tras la muerte de su madre. CJ debe recuperar el control de su barrio, enfrentar viejas rencillas y traiciones, y restaurar el poder de los Grove Street Families mientras se mueve entre Los Santos, San Fierro y Las Venturas.
   </p>
-   <section id="consolas-liberty">
-  <h2>Consolas en las que salió GTA: San andreas</h2>
-  <p>Grand Theft Auto: San andreas fue lanzado originalmente para las siguientes plataformas:</p>
-  <ul>
-    <li><a href="https://store.playstation.com/es-mx/concept/10003552" target="_blank">PlayStation2</a></li>
-    <li><a href="https://store.steampowered.com/app/1547000/Grand_Theft_Auto_San_Andreas__The_Definitive_Edition/" target="_blank">Windows(Steam)</a></li>
-    <li><a href="https://www.xbox.com/es-mx/games/store/Grand-Theft-Auto-San-Andreas/C3B11WF6SWCN" target="_blank">Xbox</a></li>
-  </ul>
+<section id="consolas">
+  <h2>Consolas en las que salió GTA: San Andreas</h2>
+  <p>Grand Theft Auto: San Andreas fue lanzado originalmente para las siguientes plataformas:</p>
+  <div class="platform-list">
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/PlayStation_2_logo.svg/512px-PlayStation_2_logo.svg.png" alt="PlayStation 2">
+      <a href="https://store.playstation.com/es-mx/concept/10003552" target="_blank">PlayStation 2</a>
+    </div>
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Windows_logo_-_2012.svg/512px-Windows_logo_-_2012.svg.png" alt="Windows">
+      <a href="https://store.steampowered.com/app/1547000/Grand_Theft_Auto_San_Andreas__The_Definitive_Edition/" target="_blank">Windows (Steam)</a>
+    </div>
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Xbox_Logo.svg/512px-Xbox_Logo.svg.png" alt="Xbox">
+      <a href="https://www.xbox.com/es-mx/games/store/Grand-Theft-Auto-San-Andreas/C3B11WF6SWCN" target="_blank">Xbox</a>
+    </div>
+  </div>
 </section>
   
  <h2>GTA: San Andreas - trailer</h2>
